@@ -404,7 +404,7 @@ extern "C" {
 #endif
   void port_halt(void);
   void _port_switch_arm(Thread *ntp, Thread *otp);
-   __attribute__((cdecl, noreturn)) void _port_thread_start(msg_t (*pf)(void *),
+   __attribute__((noreturn)) void _port_thread_start(msg_t (*pf)(void *),
                                                            void *p);
 #ifdef __cplusplus
 }
